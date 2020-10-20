@@ -1,0 +1,64 @@
+﻿@model gymApp.Models.Trener
+
+@{
+    ViewBag.Title = "Details";
+}
+
+    <div style="margin-top:7%;text-align:center">
+
+        <img style="width:350px" src="~/@(Model.Id).png" alt="" />
+
+
+    </div>
+
+    <div>
+
+        <hr />
+        <dl class="dl-horizontal" style="margin-left:35%">
+            <dt>
+                @Html.DisplayNameFor(model => model.brojNaKlienti)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.brojNaKlienti)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.nameVraboten)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.nameVraboten)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.emailVraboten)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.emailVraboten)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.kodVraboten)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.kodVraboten)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.telefonskiBrojVraboten)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.telefonskiBrojVraboten)
+            </dd>
+
+        </dl>
+
+        <p style="margin-left:47%">
+            @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+    </div>

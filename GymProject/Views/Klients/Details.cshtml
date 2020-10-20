@@ -1,0 +1,82 @@
+﻿@model gymApp.Models.Klient
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Klient</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nameKlient)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nameKlient)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.heightKlient)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.heightKlient)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.weightKlient)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.weightKlient)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kolkuPatiMesecno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kolkuPatiMesecno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telefonskiBrojKlient)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telefonskiBrojKlient)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.addressKlient)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.addressKlient)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tipTreningZaKlient)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipTreningZaKlient)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.clenskaKartaKlient)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.clenskaKartaKlient)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

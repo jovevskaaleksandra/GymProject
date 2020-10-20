@@ -1,0 +1,64 @@
+﻿@model gymApp.Models.Trener
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Trener</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.brojNaKlienti)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.brojNaKlienti)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nameVraboten)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nameVraboten)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.emailVraboten)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.emailVraboten)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kodVraboten)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kodVraboten)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telefonskiBrojVraboten)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telefonskiBrojVraboten)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

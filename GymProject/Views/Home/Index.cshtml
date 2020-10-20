@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div style="margin-top:7%;margin-bottom:2%">
+    <h1 style="text-align:center">Welcome to Crossfit Fitness Club</h1>
+    <p class="lead" style="text-align:center">Looking for a lifestyle change? You have found just the right place!</p>
+
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel"  style="margin-right:2.5%">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="~/11.png" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="~/22.png" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="~/33.png" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="~/44.png" style="width:100%;">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Find your personal trainer</h2>
+        <p>
+            With over 15 amazing and fully qualified trainers, getting into healthy habits has never been easier.
+            Make your appointment here.
+        </p>
+        <p><a class="btn btn-default" href="@Url.Action("Index", "Treners")">Trainers &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Keep track of your progress</h2>
+        <p>Thanks to our website, you can make an account and keep track of your progress, as well as diet plans, while interacting with your trainer.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Personal board &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Offers and prices</h2>
+        <p>
+            We have always been focused on providing high quality, promising results, but also on keeping out costs as low as possible.
+            For more information click the link below
+        </p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>

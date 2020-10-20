@@ -1,0 +1,66 @@
+﻿@model IEnumerable<gymApp.Models.Trener>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<style>
+    #anim {
+        transition: transform .2s; /* Animation */
+       
+    }
+    #anim:hover {
+            transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+</style>
+
+@Html.ActionLink("Create New", "Create")
+<div class="container">
+
+    <div class="default-heading">
+
+        <br />
+
+    </div>
+    <div class="row" style="margin-left:auto; margin-right:2.5%">
+        @{var i = 0;}
+        @foreach (var item in Model)
+        {
+            i++;
+
+            <div class="col-md-3" style="margin-bottom:30px">
+
+                <div class="member">
+
+                        <a href="@Url.Action("Details", "Treners", new { id = item.Id })">
+                            <img id="anim" style="width:250px" src="~/@(i).png" alt="" />
+                        </a>
+                    <br />
+                    <br />
+                   
+
+                    <h4>@Html.DisplayFor(modelItem => item.nameVraboten)</h4>
+
+
+                    <p>Email:</p>
+                    <p>@Html.DisplayFor(modelItem => item.emailVraboten)</p>
+                    <p>Телефон: @Html.DisplayFor(modelItem => item.telefonskiBrojVraboten)</p>
+                    <p>Број на клиенти: @Html.DisplayFor(modelItem => item.brojNaKlienti):</p>
+                    <p>Код на вработен: @Html.DisplayFor(modelItem => item.kodVraboten)</p>
+                    <br />
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                    <br />
+                    <br />
+                </div>
+            </div>
+
+        }
+    </div>
+</div>
+
+
+

@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+    <br />
+    <br />
+    <br />
+    <h2 style="text-align:center">CROSSFIT Fitness Club<br /></h2>
+
+<div style="text-align:center">
+<address>
+    Димитар Влахов 115, Битола<br />
+    <abbr title="Phone">Тел:</abbr>
+    047238970
+</address>
+
+<address>
+    <strong>Поддршка:</strong>   <a href="mailto:Support@example.com">crossfitgym@gmail.com</a><br />
+</address>
+
+ </div>
+<style type="text/css">
+    /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+    #map {
+        height: 400px;
+        width:90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Optional: Makes the sample page fill the window. */
+  
+</style>
+
+<div class="row" style="text-align:center">
+<div id="map">
+    <script>
+
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 41.987180, lng: 22.186260 },
+                zoom: 8,
+            });
+        }
+
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWl9BaY0IO0DkSIGzT5pRjqvhy5I78bc8&callback=initMap"
+            async defer></script>
+</div>
+</div>
